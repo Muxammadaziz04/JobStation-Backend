@@ -4,40 +4,45 @@
   "info": {
     "singularName": "cv",
     "pluralName": "cvs",
-    "displayName": "Cv"
+    "displayName": "Cv",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "FirstName": {
-      "type": "string",
-      "required": true
-    },
-    "lastName": {
-      "type": "string",
-      "required": true
-    },
-    "dateOfBirth": {
-      "required": true,
-      "type": "date"
-    },
-    "location": {
+    "full_name": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
+    "working_sphere": {
+      "type": "string"
     },
     "experience": {
-      "type": "integer"
+      "type": "string"
     },
-    "salary": {
-      "type": "integer"
+    "date_of_birth": {
+      "type": "date"
+    },
+    "info": {
+      "type": "text"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "user_id": {
+      "type": "biginteger"
     }
   }
 }

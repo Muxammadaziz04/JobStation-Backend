@@ -12,35 +12,39 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "employmentStatus": {
-      "type": "enumeration",
-      "enum": [
-        "full-time",
-        "part-time",
-        "remote"
-      ]
-    },
-    "experience": {
+    "job_name": {
       "type": "string"
     },
-    "location": {
+    "organization_name": {
       "type": "string"
     },
-    "salary": {
-      "type": "integer"
+    "working_days": {
+      "type": "string"
     },
-    "description": {
+    "working_hours": {
+      "type": "string"
+    },
+    "text": {
       "type": "text"
     },
-    "applys": {
-      "type": "integer"
-    },
-    "company": {
+    "salary": {
       "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "biginteger"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
